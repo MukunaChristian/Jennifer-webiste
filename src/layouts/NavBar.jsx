@@ -1,4 +1,6 @@
-import '../scss/partials/NavBar.scss'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../scss/partials/NavBar.scss';
 
 function Navbar() {
   return (
@@ -7,9 +9,12 @@ function Navbar() {
         <img src="/your-logo.png" alt="Logo" className="logo" />
       </div>
       <div className="nav-buttons">
-        <button className="nav-button">Home</button>
-        <button className="nav-button">About</button>
+        <Link to="/home" className="nav-button">Promise</Link>
+
+        <Link to="/loveStoryTimeline" className="nav-button">Timeline</Link>
+        {/* Use Link component for navigation */}
         <button className="nav-button">Contact</button>
+
       </div>
     </div>
   );

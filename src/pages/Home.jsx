@@ -1,7 +1,6 @@
 import '../scss/pages/home.scss'; // Import the CSS file for styling
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 
-import { Link } from 'react-router-dom';
 
 export default function Home() {
     const [newPromise, setNewPromise] = useState('');

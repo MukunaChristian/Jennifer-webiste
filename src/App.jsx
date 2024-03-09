@@ -1,14 +1,14 @@
-import { useState } from 'react';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
 
 function App() {
   const [promises, setPromises] = useState([]);
-  const [newPromise, setNewPromise] = useState('');
+  const [newPromise, setNewPromise] = useState("");
 
   const addPromise = () => {
-    if (newPromise.trim() !== '') {
+    if (newPromise.trim() !== "") {
       setPromises([...promises, newPromise.trim()]);
-      setNewPromise('');
+      setNewPromise("");
     }
   };
 

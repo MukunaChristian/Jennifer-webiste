@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import WebLayout from './layouts/WebLayout.jsx';
 import { createRoot } from "react-dom/client";
-// import Home from './pages/Home.jsx';
+import Home from './pages/Home.jsx';
 import LoveStoryTimeline from "./components/Timeline.jsx";
 import "./scss/pages/home.scss";
 import "./scss/partials/NavBar.scss"
@@ -18,7 +18,10 @@ root.render(
   <Router>
     <Routes>
       <Route element={<WebLayout />}>
-        <Route path="" element={<LoveStoryTimeline/>} />
+      <Route path="" element={<Home/>} />
+        <Route path="home" element={<Home/>} />
+        <Route path="loveStoryTimeline" element={<LoveStoryTimeline/>} />
+
       </Route>
     </Routes>
   </Router>
