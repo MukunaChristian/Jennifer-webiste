@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .nav-buttons {
+    display: flex;
+  }
+  
+  .nav-button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-button:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+  }
+  

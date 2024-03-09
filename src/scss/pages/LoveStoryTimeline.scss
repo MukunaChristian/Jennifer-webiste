@@ -1,0 +1,56 @@
+#timeline {
+    .love-story-timeline {
+      text-align: center;
+  
+      .timeline {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        justify-items: center;
+  
+        .moment {
+          width: 60%;
+          height: 300px; // Set a fixed height for each card
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+  
+          .date,
+          .description {
+            margin-bottom: 10px;
+          }
+  
+          .media-container {
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+          }
+  
+          .media {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; // Maintain aspect ratio and cover entire area
+            transition: transform 0.3s ease-in-out;
+          }
+  
+          &:hover .media {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+    @media (max-width: 600px) {
+        .timeline {
+          grid-template-columns: repeat(1, 1fr) !important;
+          width: 100%;
+          border: red 2px solid;
+          margin: auto;
+        }
+      }
+  }
+  
